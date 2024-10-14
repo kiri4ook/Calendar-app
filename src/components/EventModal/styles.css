@@ -1,0 +1,99 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    display: none;
+    border-radius: 15px;
+    border: 1px solid #302053;
+    box-shadow: 0 4px 8px rgba(141, 131, 131, 0.2);
+    width: 250px;
+    z-index: 1000;
+}
+
+.modal.open {
+    pointer-events: auto; 
+    display: block;
+}
+
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #4a3675;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #a43a3a;
+}
+  
+.modal-content {
+    padding: 20px 30px 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: rgb(95, 95, 95);
+}
+  
+.modal-content label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.modal-content input {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #cacaca;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+}
+  
+.modal-content input:focus {
+    border-color: #000000;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+  
+.button_wrp {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.modal-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: #4a3675;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+  
+.modal-content button[type="button"] {
+    color: #a43a3a;
+    margin-right: 15px;
+}
+  
+.modal-content button:hover {
+    opacity: 0.9;
+}
+  
